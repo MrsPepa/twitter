@@ -1,0 +1,124 @@
+body{
+	background-image: url(img/Hortensia-in-the-back-yard.jpg);
+	width: 100%;
+	height: auto;
+	font-family: 'Cutive Mono', monospace;
+	box-sizing: border-box;
+}
+header{
+	background-color: #1DA1F2;
+	color: #fff;
+	font-size: 1.7em;
+	margin-top: -36px;
+	margin-left: -8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* PRIMERA SECCION */
+#initial{
+	background-color: #fff;
+	width: 500px;
+	height: 236px;
+	border-radius: 8px;
+	display: inline-block;
+	margin-left: 117px;
+}
+#initial div{
+	padding-left: 20px; 
+}
+hr{
+	width: 100%;
+	margin-left: -11px;
+	margin-top: 2pc;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid lightgrey;
+}
+#initial span{
+    font-size: 1.4em;
+    color: teal;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* SEGUNDA SECCION */
+#hr1{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid lightgrey;
+	margin: 0;
+    margin-top: 2pc;
+}
+#second{
+	background-color: #fff;
+	width: 500px;
+	height: 236px;
+	border-radius: 8px;
+	float: right;
+	margin-right: 156px;
+	font-family: 'Space Mono', monospace;
+	overflow: auto;
+}
+.msje{
+	border: none;
+	width: 470px;
+	height: 7pc;
+	margin-left: 14px;
+	margin-top: 15px;
+    font-size: 1.3em;
+}
+
+/* Estilos y propiedades de botón */
+#btn{
+	background-color: teal;
+	border: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 1.2em;
+	width: 130px;
+	height: 30px;
+	display: inline-block;
+	color: #FFF;
+	font-family: 'Space Mono', monospace;
+    margin-top: 1pc;	
+}
+#btn:hover{
+	background-color: #5590A6;
+}
+
+#btn:focus, textarea:focus{
+	outline: none;
+}
+
+/* Contenedor de comentarios */
+#conts {
+    padding-left: 0pc;
+    padding-top: 3pc;
+    width: 70%;
+	margin: 0 auto;
+	color: #4E4D53;
+	text-align: left;
+	margin-bottom: 6em;
+}
+
+#conts span {
+	margin-left: 1em;
+}
+
+#conts div {
+	padding: 1em 0.5em;
+	margin-bottom: 2em;
+	outline: none;
+	background-color: #FFF;
+	border-radius: 10px;
+}
+#conts div:focus{
+	outline: none;
+}
+#conts div p {
+   margin-left: 20px;
+   margin-right: 20px;
+   padding-top: 10px;
+}
