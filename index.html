@@ -24,10 +24,10 @@
 
 		<section id="second">
 			<div class="conteiner">
-				<textarea name="Message" id="comment" class="msje" cols="30" rows="10" placeholder="¿Que estás pensando?"></textarea>
+				<textarea name="Message" id="comment" class="msje" cols="30" rows="10" onkeyup="textAreaAdjust(this)" placeholder="¿Que estás pensando?"></textarea>
 				<hr id="hr1">
 				<button type="button" id="btn" onclick="add()">TWEET</button>
-				<span id="caracter">140</span>
+				<p id="caracter"><span>140</span></p>
 			</div>
 		</section>
 		<section id="conts">

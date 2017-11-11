@@ -41,18 +41,31 @@ function add(){
     newComment.appendChild(hora);
 
 	conts.appendChild(newComment);
+
 }
-
+function textAreaAdjust(o){
+	o.style.height = "1px";
+  	o.style.height = (25+o.scrollHeight)+"px";
+}
+	/* CONTADOR */
+var txtArea = document.getElementById('comment');
 comment.onkeydown = function (){
-	var txtArea = document.getElementById("comment");
+	var comment = document.getElementById("comment");
+	var show = comment.value.length;
 	var cont = document.getElementById("caracter");
-	var show = txtArea.value.length;
+	cont.innerHTML = 140 - show;
 
-	cont.innerText = '' + (140 - show);
+	if(show >= 120 && show < 130){
+		return cont.setAttribute('class', 'olive');
+	}
+	if(show >= 130 && show < 140){
+		return cont.setAttribute('class', 'violet');
+	} else{
 
+	};
 	if(show > 140){
 		return document.getElementById("btn").disabled = true;
 	} else{
 		return document.getElementById("btn").enabled = true;
-	};
-};
+	}
+};	

@@ -68,6 +68,7 @@ hr{
 	margin-left: 14px;
 	margin-top: 15px;
     font-size: 1.3em;
+    overflow: hidden;
 }
 
 /* Estilos y propiedades de botón */
@@ -121,4 +122,26 @@ hr{
    margin-left: 20px;
    margin-right: 20px;
    padding-top: 10px;
+}
+/* creacion de colores caracteres */
+.olive{
+	color: olive;
+}
+.violet{
+	color: violet;
+}
+#caracter{
+	display: inline-block;
+}
+
+/* agrando de cuadro de texto */
+#comment .big{
+	background-color: #fff;
+	width: 500px;
+	height: 255px;
+	border-radius: 8px;
+	float: right;
+	margin-right: 156px;
+	font-family: 'Space Mono', monospace;
+	overflow: auto;
 }
