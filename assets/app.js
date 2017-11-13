@@ -2,7 +2,7 @@ function add(){
 
 	//tenemos que tomar el texto ingresado en el textarea
 	var comments = document.getElementById("comment").value;
-
+                                                                                           
 	//limpiar el textarea
 	document.getElementById("comment").value = '';
 
@@ -20,8 +20,10 @@ function add(){
 	};
     //crear nodo de texto 
 	var textNewComment = document.createTextNode(comments);
+	//crear contenedor de nodo 
 	var contenedorElemento = document.createElement("p");
 
+	//agrego al padre
 	contenedorElemento.appendChild(textNewComment);
 	newComment.appendChild(contenedorElemento);
 
@@ -55,6 +57,7 @@ comment.onkeydown = function (){
 	var cont = document.getElementById("caracter");
 	cont.innerHTML = 140 - show;
 
+	//agregar colores
 	if(show >= 120 && show < 130){
 		return cont.setAttribute('class', 'olive');
 	}
@@ -63,6 +66,7 @@ comment.onkeydown = function (){
 	} else{
 
 	};
+	//si sobrepasa los 140 caracteres el boton no envie nada
 	if(show > 140){
 		return document.getElementById("btn").disabled = true;
 	} else{
